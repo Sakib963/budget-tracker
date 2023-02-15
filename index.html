@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Tracker</title>
+
+    <!-- TailWind CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- Live Link: https://ubiquitous-croquembouche-a27ad0.netlify.app/ -->
+<body class="bg-gradient-to-b from-[#E1A2B8] to-[#9F2BC1] h-screen">
+     <!-- Header Title and Image -->
+    <header class="flex gap-3 justify-center pt-20">
+        <h1 class="text-5xl font-bold">Budget Tracker</h1>
+        <img src="images/salary.png" alt="" class="w-10 h-10 my-auto">
+    </header>
+
+    <body>
+        <section class="container grid grid-cols-1 md:grid-cols-2 mx-auto mt-10">
+
+            <div class="w-3/4 mx-auto">
+                <img src="images/budget.png" alt="">
+            </div>
+
+            <div class="w-3/4 mx-auto">
+                <!-- Form Div -->
+                <div class="w-3/4 mx-auto text-center">
+                    <!-- Income Part -->
+                    <h2 class="text-2xl font-bold">Income</h2>
+                    <div class="flex gap-4 mt-3 justify-center">
+                        <p class="p-2 text-lg font-medium text-end w-20">Income: </p>
+                        <input type="number" class="p-2 rounded-lg bg-slate-300 " id="income-input-field">
+                    </div>
+
+                    <!-- Expense Part -->
+                    <h2 class="text-2xl font-bold mt-5">Expenses</h2>
+                    <!-- Food Input Field -->
+                    <div class="flex gap-4 mt-3 justify-center">
+                        <p class="p-2 text-lg font-medium text-end w-20">Food: </p>
+                        <input type="number" class="p-2 rounded-lg bg-slate-300 " id="food-input-field">
+                    </div>
+                    <!-- Rent Input Field -->
+                    <div class="flex gap-4 mt-3 justify-center">
+                        <p class="p-2 text-lg font-medium text-end w-20">Rent: </p>
+                        <input type="number" class="p-2 rounded-lg bg-slate-300 " id="rent-input-field">
+                    </div>
+                    <!-- Clothes Input Field -->
+                    <div class="flex gap-4 mt-3 justify-center">
+                        <p class="p-2 text-lg font-medium text-end w-20">Clothes: </p>
+                        <input type="number" class="p-2 rounded-lg bg-slate-300 " id="clothes-input-field">
+                    </div>
+                    <!-- Calculate Button -->
+                    <button class="px-14 py-3 text-white font-medium bg-blue-500 rounded-lg mt-5" id="calculate-btn">Calculate</button>
+                    <!-- Total Expense -->
+                    <h2 class="text-2xl font-bold mt-5">Total Expense: <span id="total-expense-text"></span></h2>
+                    <!-- Balance -->
+                    <h2 class="text-2xl font-bold mt-5">Balance: <span id="balance-text"></span></h2>
+                    <!-- Save Section -->
+                    <div class="flex gap-4 mt-7 justify-center">
+                        <p class="p-2 text-lg font-medium text-end w-20">Save: </p>
+                        <input type="number" class="p-2 rounded-lg bg-slate-300 " id="save-input-field">
+                        <p class="p-2 text-lg font-medium">%</p>
+                        <button class="px-14 text-white font-medium bg-blue-500 rounded-lg" id="save-btn">Save</button>
+                    </div>
+                    <!-- Saving Amount -->
+                    <h2 class="text-2xl font-bold mt-5">Saving Amount: <span id="save-text"></span></h2>
+                    <!-- Remaining Balance -->
+                    <h2 class="text-2xl font-bold mt-5">Remaining Balance: <span id="remaining-text"></span></h2>
+                </div>
+            </div>
+
+        </section>
+    </body>
+
+
+
+
+    <script src="js/app.js"></script>
+</body>
+</html>
